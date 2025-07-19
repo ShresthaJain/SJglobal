@@ -1,26 +1,17 @@
+import ImpactCards from './ImpactCards';
 export default function Impact() {
+    
     return (
-        <div>
-            <h4>Making an Impact That Matters</h4>
-            <p>At SJ Global Consulting, our purpose is to make an impact that truly matters — for our clients, our collaborators, and the society we operate in.
-               <br />We partner with startups, small, and mid-sized businesses to simplify what often feels complex — whether in global trade, operations, ERP systems, or people policies. Our mission is to build structures that last, enable compliance without chaos, and align strategy with human dignity.
-               <br />From streamlining EXIM processes to establishing HR frameworks and workplace policies, we help growing companies stay compliant, efficient, and future-ready.
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-20 lg:pt-5">
+            <h4 className="text-2xl font-semibold mt-10 mb-4 text-gray-900">Making an Impact That Matters</h4>
+            <p className="mt-8 text-lg text-gray-700 sm:text-xl text-justify">At SJ Global, our purpose is to make an impact that truly matters, for our clients, our collaborators, and the society we operate in.
+               <br /> <br /> We partner with International company expanding into India, Manufacturing Unit, Importers, Exporters, Early Stage Ventures to Established Enterprises to simplify what often feels complex; whether in global trade, operations, ERP systems, or people policies. Our mission is to build structures that last, enable compliance without chaos, and align strategy with human dignity.
+               <br /> <br /> From streamlining Import and Export processes to establishing Human Resource frameworks and workplace policies, we help growing companies stay compliant, efficient, and future-ready.
             </p>
-            <ul>We offer expertise in:
-                <li>Export-Import (EXIM) operations & documentation</li>
-                <li>ERP optimization and operational SOPs</li>
-                <li>HR policy setup for startups & MSMEs</li>
-                <li>Statutory compliance and onboarding processes</li>
-                <li>PoSH (Prevention of Sexual Harassment) policy drafting, training & committee formation</li>
-
-            </ul>
-            <p>
-                We’re not just consultants — we’re your behind-the-scenes partners, enabling you to focus on building your business while we handle what needs to run smoothly.
-                <br />Our size allows us to be agile and personalized, but our experience ensures we stay precise and strategic. Every engagement is grounded in clarity, compliance, and care.
-                <br />At SJ Global, we turn structure into strength — and complexity into clarity.
-                <br />We are here to help you grow responsibly, operate smartly, and lead with purpose.
-
-            </p>
+            <h5 className="text-lg font-semibold mt-10 mb-4 text-gray-900">We offer expertise in: </h5>
+            
+            <ImpactCards />
         </div>
+        
     );
 }

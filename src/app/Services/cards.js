@@ -1,7 +1,8 @@
 'use client'
 import { useState } from 'react';
+import './index.css';
 
-export default function hrpayroll() {
+export default function hrpayroll({ className = '' }) {
     const hrtext =
         
         "At SJ Global Consulting, we help startups and mid-sized businesses simplify and streamline their HR and payroll operations with a practical, compliance-first approach. From salary processing, statutory filings (PF, ESI, TDS), and labor law compliance to onboarding documentation and exit formalities — we manage it all. Our services also include advisory support on employment tax, bonus, gratuity, minimum wages, and employee cost structuring, helping you stay legally sound while supporting your team effectively." + 
@@ -38,10 +39,10 @@ export default function hrpayroll() {
     return (
        <div className="card-container">
 
-            <div className="card">
+            <div className="card min-h-100">
                 <div className={`card-inner ${isShownHr ? 'flipped' : ''}`}>
                     <div className="card-front">
-                        <h3>HR & Payroll</h3>
+                        <h3 className="text-2xl font-bold mb-2">HR & Payroll</h3>
                         <div className="card-content">
                             <p>{hrPreview}</p>
                         </div>
@@ -53,7 +54,7 @@ export default function hrpayroll() {
                     </div>
 
                     <div className="card-back">
-                        <h3>HR & Payroll</h3>
+                        <h3 className="text-2xl font-bold mb-2">HR & Payroll</h3>
                         <div className="card-content">
                             <p>
                                 {hrtext.split('\n').map((line, index) => (
@@ -77,7 +78,7 @@ export default function hrpayroll() {
             <div className="card">
                 <div className={`card-inner ${isShownExim ? 'flipped' : ''}`}>
                     <div className="card-front">
-                        <h3>Import & Export (EXIM) Advisory Services</h3>
+                        <h3 className="text-2xl font-bold mb-2">Import & Export (EXIM) Advisory Services</h3>
                         <div className="card-content">
                             <p>{eximPreview}</p>
                         </div>
@@ -89,7 +90,7 @@ export default function hrpayroll() {
                     </div>
 
                     <div className="card-back">
-                        <h3>Import & Export (EXIM) Advisory Services</h3>
+                        <h3 className="text-2xl font-bold mb-2">Import & Export (EXIM) Advisory Services</h3>
                         <div className="card-content">
                             <p>
                                 {eximtext.split('\n').map((line, index) => (
@@ -113,7 +114,7 @@ export default function hrpayroll() {
             <div className="card">
                 <div className={`card-inner ${isShownErp ? 'flipped' : ''}`}>
                     <div className="card-front">
-                        <h3>Emerging ERP Solutions</h3>
+                        <h3 className="text-2xl font-bold mb-2">Emerging ERP Solutions</h3>
                         <div className="card-content">
                             <p>{erpPreview}</p>
                         </div>
@@ -125,7 +126,7 @@ export default function hrpayroll() {
                     </div>
 
                     <div className="card-back">
-                        <h3>Emerging ERP Solutions</h3>
+                        <h3 className="text-2xl font-bold mb-2">Emerging ERP Solutions</h3>
                         <div className="card-content">
                             <p>
                                 {erptext.split('\n').map((line, index) => (

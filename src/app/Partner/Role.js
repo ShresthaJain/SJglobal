@@ -14,7 +14,7 @@ export default function Role() {
                 <p>We’d love to explore opportunities to collaborate, co-deliver solutions, and bring value to our growing client base.</p>
                 <p>
                 Fill out our Vendor Partner Form below or 
-                <a href="mailto:info@sjglobalconsulting.com">email us</a> 
+                <a href="mailto:info@sjglobalconsulting.com"> email us </a> 
                  to start the conversation.
                 </p>
                 <p>Together, we can deliver smarter solutions to the businesses that need them most.</p>
