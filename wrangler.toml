@@ -2,4 +2,3 @@ name = "sj-global-consulting" # name it anything
 compatibility_date = "2025-07-20"
 
 
-bucket = "./dist"   # or "./build" if you're using Create React App
