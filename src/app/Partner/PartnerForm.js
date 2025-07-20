@@ -61,7 +61,7 @@ export default function PartnerForm() {
 
   return (
     <div className="p-6 rounded-lg">
-      <h4 className="text-2xl font-bold text-[#ff9500] mb-4">🤝 Become a Partner</h4>
+      <h4 className="text-2xl font-bold text-[#ff9500] mb-4">Become a Partner</h4>
       <p className="mb-6 text-gray-800">
         Please fill out the form below to express your interest. We’ll connect with you to discuss collaboration
         opportunities and onboarding.

@@ -226,12 +226,11 @@ export default function WhyUs() {
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
                 <ul className="space-y-3 font-medium">
-                  <li>GCC</li>
-                  <li>ASEAN</li>
-                  <li>USA</li>
+                  <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
+                  <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
+                  <li>United States of America</li>
                   <li>Canada</li>
-                  <li>Italy</li>
-                  <li>China</li>
+                  <li>Europe (Italy, Poland)</li>
                 </ul>
               </div>
 

@@ -87,10 +87,10 @@ export default function Partner() {
         <div className="absolute inset-0 bg-black/60 z-0"></div>
 
         {/* Content */}
-        <div className="relative z-10 text-white isolate overflow-hidden px-6 pt-32 sm:pt-48 lg:px-8 lg:pt-35">
+        <div className="relative z-10 text-white isolate overflow-hidden px-6 pt-10 sm:pt-48 lg:px-8 lg:pt-10">
             <main className="flex-grow px-6 py-10 max-w-5xl mx-auto text-white">
             <section>
-                <h2 className="text-3xl font-bold text-white mb-4">Partner With Us – Let’s Build Together</h2>
+                <h2 className="text-3xl font-bold text-white mb-4 text-center pb-5">Partner With Us – Let’s Build Together</h2>
                 <Intro />
                 <Role />
             </section>
@@ -167,12 +167,11 @@ export default function Partner() {
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
                 <ul className="space-y-3 font-medium">
-                  <li>GCC</li>
-                  <li>ASEAN</li>
-                  <li>USA</li>
+                  <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
+                  <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
+                  <li>United States of America</li>
                   <li>Canada</li>
-                  <li>Italy</li>
-                  <li>China</li>
+                  <li>Europe (Italy, Poland)</li>
                 </ul>
               </div>
 

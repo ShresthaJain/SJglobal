@@ -203,7 +203,7 @@ export default function Home() {
               {/* Text Section - 2/3 width */}
               <div className="w-full lg:w-2/3 lg:ml-auto text-left">
                 <h3 className="mt-6 text-2xl font-semibold text-black sm:text-3xl">
-                  Our Values:
+                  Our Values
                 </h3>
                 
                 <p className="mt-8 text-lg text-gray-700 sm:text-xl text-justify">
@@ -362,12 +362,11 @@ export default function Home() {
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
                 <ul className="space-y-3 font-medium">
-                  <li>GCC</li>
-                  <li>ASEAN</li>
-                  <li>USA</li>
+                  <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
+                  <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
+                  <li>United States of America</li>
                   <li>Canada</li>
-                  <li>Italy</li>
-                  <li>China</li>
+                  <li>Europe (Italy, Poland)</li>
                 </ul>
               </div>
 

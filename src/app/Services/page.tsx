@@ -101,14 +101,14 @@ export default function ServicesPage() {
         </div>
 
         <main className="flex-grow px-6 py-10 max-w-7xl mx-auto">
-          <div className="flex items-center justify-center pt-20">
+          <div className="flex items-center justify-center pt-5">
             <img
                 src="/images/building.jpeg"
                 className="w-3/4 h-auto object-contain"
                 alt="building"
             />
           </div>
-          <h2 className="text-3xl font-bold text-center text-black mb-10">Our Services</h2>
+          <h2 className="text-3xl font-bold text-center text-black mb-10 pt-10">Our Services</h2>
 
           <p className="text-lg mb-6 text-gray-800">
             At SJ Global Consulting, we offer customized, end-to-end business solutions that simplify operations, ensure compliance, and prepare your organization for scalable, sustainable growth. Our services are designed specifically for
@@ -195,12 +195,11 @@ export default function ServicesPage() {
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
                 <ul className="space-y-3 font-medium">
-                  <li>GCC</li>
-                  <li>ASEAN</li>
-                  <li>USA</li>
+                  <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
+                  <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
+                  <li>United States of America</li>
                   <li>Canada</li>
-                  <li>Italy</li>
-                  <li>China</li>
+                  <li>Europe (Italy, Poland)</li>
                 </ul>
               </div>
 

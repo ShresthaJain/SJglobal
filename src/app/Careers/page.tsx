@@ -82,7 +82,7 @@ export default function Careers() {
       </header>
 
       {/* Main Content */}
-      <div className="relative isolate overflow-hidden px-6 pt-32 sm:pt-48 lg:px-8 lg:pt-56">
+      <div className="relative isolate overflow-hidden px-6 pt-32 sm:pt-48 lg:px-8 lg:pt-35">
         {/* Top Gradient */}
         <div
           aria-hidden="true"
@@ -107,14 +107,14 @@ export default function Careers() {
               <div>
                 <h2 className="text-3xl font-bold text-black mb-4">Careers at SJ Global Consulting</h2>
                 <p className="text-gray-800 mb-4">
-                  At SJ Global Consulting, we believe in creating meaningful careers — not just jobs. We're always on the lookout
+                  At SJ Global Consulting, we believe in creating meaningful careers, not just jobs. We're always on the lookout
                   for passionate individuals who value clarity, ethics, and the opportunity to shape real-world impact.
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 mb-4">
-                  <li>💼 Experienced professionals, including those returning to the workforce</li>
-                  <li>👩‍💻 Women professionals seeking flexible, respectful workplaces</li>
-                  <li>🎓 Young talent</li>
-                  <li>🎯 Retired experts who want to contribute their knowledge to growing businesses</li>
+                  <li>Experienced professionals, including those returning to the workforce</li>
+                  <li>Women professionals seeking flexible, respectful workplaces</li>
+                  <li>Young talent</li>
+                  <li>Retired experts who want to contribute their knowledge to growing businesses</li>
                 </ul>
                 <p className="text-gray-800">If you align with our values and vision, we’d love to hear from you.</p>
             </div>
@@ -196,12 +196,11 @@ export default function Careers() {
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
                 <ul className="space-y-3 font-medium">
-                  <li>GCC</li>
-                  <li>ASEAN</li>
-                  <li>USA</li>
+                  <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
+                  <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
+                  <li>United States of America</li>
                   <li>Canada</li>
-                  <li>Italy</li>
-                  <li>China</li>
+                  <li>Europe (Italy, Poland)</li>
                 </ul>
               </div>
 
