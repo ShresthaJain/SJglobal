@@ -1,6 +1,6 @@
 'use client'
 import Intro from './intro.js';
-import Role from './role.js';
+import Role from './Role.js';
 import PartnerForm from './PartnerForm.js';
 import Link from 'next/link';
 import { useState } from 'react';
