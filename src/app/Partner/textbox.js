@@ -20,7 +20,7 @@ export default function Textbox({ value, onChange, limit = 300 }) {
       <p>Brief Profile or Area of Specialization: ({limit} character limit): </p>
       <textarea
         rows={7}
-        cols={100}
+        cols={75}
         onChange={handleChange}
         value={value}
         placeholder="Share your background, skills, and what you're looking for in your next opportunity."

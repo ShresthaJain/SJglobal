@@ -5,16 +5,16 @@ import './index.css';
 export default function hrpayroll({ className = '' }) {
     const hrtext =
         
-        "At SJ Global Consulting, we help startups and mid-sized businesses simplify and streamline their HR and payroll operations with a practical, compliance-first approach. From salary processing, statutory filings (PF, ESI, TDS), and labor law compliance to onboarding documentation and exit formalities — we manage it all. Our services also include advisory support on employment tax, bonus, gratuity, minimum wages, and employee cost structuring, helping you stay legally sound while supporting your team effectively." + 
-        "\n\nAs per your company’s budget and stage of growth, we help transition manual processes into structured, semi-automated, or fully digital workflows — using tools that are efficient, scalable, and tailored to your needs. Whether you use basic spreadsheets or are ready for an HRMS, we guide you in selecting and implementing the right-fit technology without over-investing. With us, you get compliance, clarity, and control — all aligned with your operational reality.";
+        "At SJ Global, we help early stage ventures to established enterprises simplify and streamline their HR and payroll operations with a practical, compliance-first approach. From salary processing, statutory filings (PF, ESI, TDS), and labor law compliance to onboarding documentation and exit formalities; we manage it all." + 
+        "\n\nAs per your company’s budget and stage of growth, we help transition manual processes into structured, semi-automated, or fully digital workflows; using tools that are efficient, scalable, and tailored to your needs. Whether you use basic spreadsheets or are ready for an HRMS, we guide you in selecting and implementing the right-fit technology without over-investing. With us, you get compliance, clarity, and control — all aligned with your operational reality.";
     const erptext = 
         
         "Unlock the power of modern ERP systems tailored to your size, stage, and sector. At SJ Global Consulting, we help startups and growing businesses transition from manual workflows to integrated ERP platforms that bring structure, visibility, and long-term scalability." +
         "\n\nBy embedding automation and intelligent process flows, we help businesses achieve real-time data accuracy, compliance readiness, and operational control. Together, we turn ERP into a foundation for sustainable, tech-enabled growth.";
     const eximtext =
         
-        "At SJ Global Consulting, we help you set up and scale your Import-Export (EXIM) operations with a sharp focus on compliance, efficiency, and clarity. From documentation to DGFT and Customs advisory, we guide businesses through the entire process of establishing international trade operations that are structured, risk-free, and audit-ready." +
-        "\n\nWhat sets us apart is our ability to help clients reduce shipment costs, optimize logistics, and plan exports/imports within defined budgets. We streamline vendor coordination and create step-by-step workflows to minimize delays, rework, and penalties — ensuring your global movement of goods is not only seamless but also cost-effective.";
+        "At SJ Global, we help you set up and scale your Import-Export (EXIM) operations with a sharp focus on compliance, efficiency, and clarity. From documentation to DGFT and Customs advisory, we guide businesses through the entire process of establishing international trade operations that are structured, risk-free, and audit-ready." +
+        "\n\nWhat sets us apart is our ability to help clients reduce shipment costs, optimize logistics, and plan exports/imports within defined budgets. We streamline vendor coordination and create step-by-step workflows to minimize delays, rework, and penalties; ensuring your global movement of goods is not only seamless but also cost-effective.";
     
     const previewLength = 150; // characters to show in preview
     const hrPreview = hrtext.slice(0, previewLength) + (hrtext.length > previewLength ? '...' : '');
@@ -42,7 +42,7 @@ export default function hrpayroll({ className = '' }) {
             <div className="card min-h-100">
                 <div className={`card-inner ${isShownHr ? 'flipped' : ''}`}>
                     <div className="card-front">
-                        <h3 className="text-2xl font-bold mb-2">HR & Payroll</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-center">HR & Payroll</h3>
                         <div className="card-content">
                             <p>{hrPreview}</p>
                         </div>
@@ -54,7 +54,7 @@ export default function hrpayroll({ className = '' }) {
                     </div>
 
                     <div className="card-back">
-                        <h3 className="text-2xl font-bold mb-2">HR & Payroll</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-center">HR & Payroll</h3>
                         <div className="card-content">
                             <p>
                                 {hrtext.split('\n').map((line, index) => (
@@ -78,7 +78,7 @@ export default function hrpayroll({ className = '' }) {
             <div className="card">
                 <div className={`card-inner ${isShownExim ? 'flipped' : ''}`}>
                     <div className="card-front">
-                        <h3 className="text-2xl font-bold mb-2">Import & Export (EXIM) Advisory Services</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-center">Import & Export (EXIM) Advisory Services</h3>
                         <div className="card-content">
                             <p>{eximPreview}</p>
                         </div>
@@ -90,7 +90,7 @@ export default function hrpayroll({ className = '' }) {
                     </div>
 
                     <div className="card-back">
-                        <h3 className="text-2xl font-bold mb-2">Import & Export (EXIM) Advisory Services</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-center">Import & Export (EXIM) Advisory Services</h3>
                         <div className="card-content">
                             <p>
                                 {eximtext.split('\n').map((line, index) => (
@@ -114,7 +114,7 @@ export default function hrpayroll({ className = '' }) {
             <div className="card">
                 <div className={`card-inner ${isShownErp ? 'flipped' : ''}`}>
                     <div className="card-front">
-                        <h3 className="text-2xl font-bold mb-2">Emerging ERP Solutions</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-center">Emerging ERP Solutions</h3>
                         <div className="card-content">
                             <p>{erpPreview}</p>
                         </div>
@@ -126,7 +126,7 @@ export default function hrpayroll({ className = '' }) {
                     </div>
 
                     <div className="card-back">
-                        <h3 className="text-2xl font-bold mb-2">Emerging ERP Solutions</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-center">Emerging ERP Solutions</h3>
                         <div className="card-content">
                             <p>
                                 {erptext.split('\n').map((line, index) => (

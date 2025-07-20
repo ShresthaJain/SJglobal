@@ -6,16 +6,20 @@ import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Cards from './Services/cards.js';
 import RedirectionCard from './RedirectionCard.js';
-import Animation from './animation.js'
+import Animation from './animation.js';
+import SlideShow from './SlideShow'
+
 
 const navigation = [
-  { name: 'About Us', href: '/AboutUs' },
-  { name: 'Services', href: '/Services' },
-  { name: 'Careers', href: '/Careers' },
-  { name: 'Contact Us', href: '/Contact' },
-  { name: 'Partner with Us', href: '/Partner' },
-  { name: 'Why Us', href: '/WhyUs' },
-];
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/AboutUs'},
+    { name: 'Services', href: '/Services' },
+    { name: 'Why Us', href: '/WhyUs' },
+    { name: 'Partner With Us', href: './Partner'},
+    { name: 'Careers', href: '/Careers'},
+    { name: 'Contact Us', href: '/Contact' },
+    
+  ];
 
 const callToAction = [
   { name: 'Explore Our Services', href: '/Services' },
@@ -24,6 +28,7 @@ const callToAction = [
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
 
   return (
     <div className="bg-gradient-to-br from-[#ffad30] to-blue-400 text-black">
@@ -95,7 +100,7 @@ export default function Home() {
         </Dialog>
       </header>
 
-      <div className="relative px-6 pt-50 pb-15 sm:pt-48 lg:px-8 lg:pt-56 bg-black text-white">
+      <div className="relative px-6 pt-50 pb-20 sm:pt-48 lg:px-8 lg:pt-56 bg-black text-white">
         <div className="mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-12">
 
             {/* Text Section - takes 2/3 on large screens */}
@@ -110,8 +115,8 @@ export default function Home() {
               <p className="mt-8 text-lg text-gray-200 sm:text-xl text-justify">
                 Empowering Businesses Globally With Structured, Scalable, And Compliant Operations.
               </p>
-              <div className="mt-10">
-                <ul className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-1 items-center text-base font-medium text-gray-900">
+              <div className="mt-10 pt-20">
+                <ul className="grid grid-cols-1 gap-1 lg:grid-cols-2 sm:gap-1 items-left text-base font-medium text-gray-900">
                   {callToAction.map((item) => (
                     <li key={item.name}  className="flex justify-center">
                       <Link
@@ -129,13 +134,8 @@ export default function Home() {
 
             {/* Image Section - takes 1/3 on large screens */}
             <div className="w-full lg:w-1/3">
-              <img
-                src="/images/pinkSky.png" // Ensure this is in the `public/images/` folder
-                alt="Decorative side"
-                className="w-full h-auto rounded-lg shadow-md"
-              />
-            </div>
-           
+              <SlideShow />
+           </div>
           </div>
       </div>
 
@@ -162,7 +162,7 @@ export default function Home() {
               {/* Text Section - 2/3 width */}
               <div className="w-full lg:w-2/3 lg:ml-auto text-left">
                 
-                <h4 className="mt-6 text-2xl font-semibold text-black sm:text-3xl">
+                <h4 className="text-2xl font-semibold text-black sm:text-3xl">
                   Making an Impact That Matters
                 </h4>
                 <p className="mt-8 text-lg text-gray-700 sm:text-xl text-justify">
@@ -256,14 +256,11 @@ export default function Home() {
                 </button>
               </div>
 
-
-
             </div>
           </div>
-          <RedirectionCard />
 
           <div className="mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-12">
-
+            
             {/* Text Section - takes 2/3 on large screens */}
             <div className="full lg:w-1/2 text-left">
               <h3 className="mt-6 text-2xl font-semibold text-black sm:text-3xl">
@@ -272,42 +269,62 @@ export default function Home() {
               <p className="mt-8 text-lg text-gray-700 sm:text-xl text-justify">
                 Special Focus Region
               </p>
-              <ul className="mt-4 list-disc list-inside text-gray-700 text-lg sm:text-xl space-y-2 list-none">  We specialize in cross-border trade and consulting across:
-                <li>🇮🇳 India</li>
-                <li>🇦🇪 Dubai & GCC (Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
-                <li>🌏 ASEAN (Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
-                <li>🇺🇸 USA & 🇨🇦 Canada</li>
-                <li>🇪🇺 Europe (Italy, Poland)</li>
+              <ul className="mt-4 list-disc list-inside text-gray-700 text-lg sm:text-xl space-y-2">  We are specialized globally for cross-border trade and consulting, howe ever our key focussed regions are mentioned but not limited to:
+                <li>India</li>
+                <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
+                <li>ASEAN (Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
+                <li>USA & Canada</li>
+                <li>Europe (Italy, Poland)</li>
+              </ul>
+              <br />
+            </div>
+
+            <div className="flex items-right justify-center pb-5 ">
+              <img
+                  src="/images/ShipBridge.jpeg"
+                  className="h-auto object-contain w-100 rounded-lg shadow-md"
+                  alt="Container ship under bridge"
+              />
+            </div>
+
+          </div>
+          <div className="mx-auto max-w-7xl flex flex-col lg:flex-row items-center justify-between gap-5">
+            <div className="flex items-right justify-center pb-10 ">
+              <img
+                  src="/images/plants.jpeg"
+                  className="h-70 object-contain w-auto rounded-lg shadow-md"
+                  alt="Plants"
+              />
+            </div>
+            {/* Text Section - takes 2/3 on large screens */}
+            <div className="full lg:w-1/2 text-left justify-center -mt-5">
+              <h3 className="text-2xl font-semibold text-black sm:text-3xl">
+                Who We Work With
+              </h3>
+              <ul className="mt-4 list-disc list-inside text-gray-700 text-lg sm:text-xl space-y-2">
+                <li>International Companies entering India</li>
+                <li>Exporters & Importers targeting global markets</li>
+                <li>Manufacturing Companies</li>
+                <li>Trading Firms (New, Old & Used Equipment)</li>
+                <li>Auction Houses</li>
+                <li>Startups & MSME's</li>
+                <li>Early stage Ventures or Established Enterprises</li> 
               </ul>
               
             </div>
 
-            <div className="full lg:w-1/2 text-left">
-              <h3 className="mt-6 text-2xl font-semibold text-black sm:text-3xl">
-                Who We Work With
-              </h3>
-              <ul className="mt-4 list-disc list-inside text-gray-700 text-lg sm:text-xl space-y-2">
-                <li>Manufacturing Companies</li>
-                <li>International Companies entering India</li>
-                <li>Exporters & Importers targeting global markets</li>
-                <li>Trading Firms (New, Old & Used Equipment)</li>
-                <li>Auction Houses</li>
-                <li>Startups</li>
-              </ul>
-              <button 
-                  className="mt-6 px-4 py-2 rounded text-black bg-gradient-to-br from-[#ffad30] to-blue-400 shadow-md hover:shadow-lg transition duration-300" 
-                  onClick={() => window.location.href = '/Partner'}>
-                  Read more
-                </button>
-              <br />
-            <br />
-            </div>
             
 
-            
-           
           </div>
-        
+            
+            <div className="flex items-left justify-center pb-10">
+                <img
+                    src="/images/buildings.jpeg"
+                    className="w-1/2 h-auto object-contain"
+                    alt="Buildings"
+                />
+            </div>
+          
             
         </div>
         <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300">
@@ -319,13 +336,12 @@ export default function Home() {
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
                 <ul className="space-y-3 font-medium">
                   <li><a href="/" className="hover:underline">Home</a></li>
-                  <li><a href="/about" className="hover:underline">About Us</a></li>
-                  <li><a href="/services" className="hover:underline">Services</a></li>
-                  <li><a href="/careers" className="hover:underline">Careers</a></li>
-                  <li><a href="/partner" className="hover:underline">Partner With Us</a></li>
-                  <li><a href="/contact" className="hover:underline">Contact Us</a></li>
-                  <li><a href="/privacy" className="hover:underline">Privacy Policy</a></li>
-                  <li><a href="/terms" className="hover:underline">Terms of Use</a></li>
+                  <li><a href="/AboutUs" className="hover:underline">About Us</a></li>
+                  <li><a href="/Services" className="hover:underline">Services</a></li>
+                  <li><a href="/WhyUs" className="hover:underline">Why Us</a></li>
+                  <li><a href="/Partner" className="hover:underline">Partner With Us</a></li>
+                  <li><a href="/Careers" className="hover:underline">Careers</a></li>
+                  <li><a href="/Contact" className="hover:underline">Contact Us</a></li>
                 </ul>
               </div>
 
@@ -334,9 +350,10 @@ export default function Home() {
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
                 <ul className="space-y-3 font-medium">
                   <li>SJ Global Consulting</li>
-                  <li>Based in India & US | Serving Clients Globally</li>
-                  <li>info@sjglobalconsulting.com</li>
-                  <li>+91 99106 28496</li>
+                  <li>Based in India & United States | Serving Clients Globally</li>
+                  <li>Phone No: +91 99106 28496</li>
+                  <li>Email: info@sjglobalconsulting.com</li>
+                  
                   <li>www.sjglobalconsulting.com</li>
                 </ul>
               </div>
@@ -361,7 +378,7 @@ export default function Home() {
                   From simplifying exports to building HR systems and ERP workflows — we’re here to help you grow with clarity and compliance.
                 </p>
                 <a
-                  href="/contact"
+                  href="/Contact"
                   className="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition"
                 >
                   🔶 Book a Consultation →

@@ -13,14 +13,17 @@ export default function Careers() {
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/AboutUs'},
     { name: 'Services', href: '/Services' },
-    { name: 'Contact Us', href: '/Contact' },
-    { name: 'Partner with Us', href: '/Partner' },
     { name: 'Why Us', href: '/WhyUs' },
+    { name: 'Partner With Us', href: './Partner'},
+    { name: 'Careers', href: '/Careers'},
+    { name: 'Contact Us', href: '/Contact' },
+    
   ];
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
+    <div>
     <div className="relative isolate min-h-screen overflow-hidden scroll-smooth">
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 -z-10 animated-gradient opacity-30 blur-2xl" />
@@ -96,27 +99,52 @@ export default function Careers() {
 
         <main className="flex-grow px-6 py-10 max-w-5xl mx-auto">
           {/* Employees Section */}
-          <section className="mb-16 scroll-mt-32" id="careers">
-            <div className="bg-white p-6 rounded-lg shadow border">
-              <h2 className="text-3xl font-bold text-black mb-4">Careers at SJ Global Consulting</h2>
-              <p className="text-gray-800 mb-4">
-                At SJ Global Consulting, we believe in creating meaningful careers — not just jobs. We're always on the lookout
-                for passionate individuals who value clarity, ethics, and the opportunity to shape real-world impact.
-              </p>
-              <ul className="list-disc list-inside space-y-1 text-gray-700 mb-4">
-                <li>💼 Experienced professionals, including those returning to the workforce</li>
-                <li>👩‍💻 Women professionals seeking flexible, respectful workplaces</li>
-                <li>🎓 Young talent</li>
-                <li>🎯 Retired experts who want to contribute their knowledge to growing businesses</li>
-              </ul>
-              <p className="text-gray-800">If you align with our values and vision, we’d love to hear from you.</p>
+          <div className="flex flex-col lg:flex-row items-start gap-12">
+
+              {/* Text Section - 2/3 width */}
+              <div className="w-full lg:w-2/3 lg:ml-auto text-left">
+                
+              <div>
+                <h2 className="text-3xl font-bold text-black mb-4">Careers at SJ Global Consulting</h2>
+                <p className="text-gray-800 mb-4">
+                  At SJ Global Consulting, we believe in creating meaningful careers — not just jobs. We're always on the lookout
+                  for passionate individuals who value clarity, ethics, and the opportunity to shape real-world impact.
+                </p>
+                <ul className="list-disc list-inside space-y-1 text-gray-700 mb-4">
+                  <li>💼 Experienced professionals, including those returning to the workforce</li>
+                  <li>👩‍💻 Women professionals seeking flexible, respectful workplaces</li>
+                  <li>🎓 Young talent</li>
+                  <li>🎯 Retired experts who want to contribute their knowledge to growing businesses</li>
+                </ul>
+                <p className="text-gray-800">If you align with our values and vision, we’d love to hear from you.</p>
             </div>
-          </section>
+                
+              </div>
+              {/* Image Section - 1/3 width */}
+              <div className="w-full lg:w-1/3">
+                <img
+                  src="/images/ladder.jpeg"
+                  alt="Founder"
+                  className="w-60 h-auto rounded-sm shadow-md"
+                />
+              </div>
+            </div>
+          
+            
+          
 
           {/* Talent Network Section */}
           <section className="scroll-mt-32" id="talent">
             <TalentNetwork />
           </section>
+          <div className="flex items-center justify-center pb-10">
+              <img
+                  src="/images/hiking.jpeg"
+                  className="w-3/4 h-auto object-contain"
+                  alt="Flower"
+              />
+          </div>
+        
         </main>
 
         {/* Bottom Gradient */}
@@ -134,5 +162,69 @@ export default function Careers() {
         </div>
       </div>
     </div>
+    <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300">
+          <div className="mx-auto w-full max-w-screen-xl px-4 py-10 lg:py-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+              
+              {/* Quick Links */}
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
+                <ul className="space-y-3 font-medium">
+                  <li><a href="/" className="hover:underline">Home</a></li>
+                  <li><a href="/AboutUs" className="hover:underline">About Us</a></li>
+                  <li><a href="/Services" className="hover:underline">Services</a></li>
+                  <li><a href="/WhyUs" className="hover:underline">Why Us</a></li>
+                  <li><a href="/Partner" className="hover:underline">Partner With Us</a></li>
+                  <li><a href="/Careers" className="hover:underline">Careers</a></li>
+                  <li><a href="/Contact" className="hover:underline">Contact Us</a></li>
+                </ul>
+              </div>
+
+              {/* Contact Information */}
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
+                <ul className="space-y-3 font-medium">
+                  <li>SJ Global Consulting</li>
+                  <li>Based in India & US | Serving Clients Globally</li>
+                  <li>info@sjglobalconsulting.com</li>
+                  <li>+91 99106 28496</li>
+                  <li>www.sjglobalconsulting.com</li>
+                </ul>
+              </div>
+
+              {/* Focus Regions */}
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
+                <ul className="space-y-3 font-medium">
+                  <li>GCC</li>
+                  <li>ASEAN</li>
+                  <li>USA</li>
+                  <li>Canada</li>
+                  <li>Italy</li>
+                  <li>China</li>
+                </ul>
+              </div>
+
+              {/* Work Together */}
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Let’s Work Together</h2>
+                <p className="mb-4">
+                  From simplifying exports to building HR systems and ERP workflows — we’re here to help you grow with clarity and compliance.
+                </p>
+                <a
+                  href="/Contact"
+                  className="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition"
+                >
+                  🔶 Book a Consultation →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="px-4 py-6 bg-gray-100 dark:bg-gray-800 text-center text-sm text-gray-500 dark:text-gray-400">
+            © {new Date().getFullYear()} <a href="https://sjglobalconsulting.com" className="hover:underline">SJ Global Consulting</a>. All rights reserved.
+          </div>
+        </footer>
+      </div>
   );
 }

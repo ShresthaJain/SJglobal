@@ -1,8 +1,8 @@
 export default function Founder() {
     return (
         
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-20 lg:pt-5">
-            <h4 className="text-2xl font-semibold mt-10 mb-4 text-gray-900">Meet Our founder - Shilpi Jain</h4>
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-2 lg:pt-3">
+            <h4 className="text-2xl font-semibold mt-5 mb-4 text-gray-900">Meet Our founder - Shilpi Jain</h4>
 
             <div className="flex flex-col lg:flex-row items-start gap-12">
 

@@ -69,7 +69,7 @@ export default function TalentNetwork() {
   };
 
   return (
-    <div className="mt-16 bg-white p-6 rounded-lg shadow border">
+    <div className="mt-16 p-6 rounded-lg">
       <h4 className="text-2xl font-bold text-[#ff9500] mb-4">Join Our Talent Network</h4>
       <p className="text-gray-800 mb-6">
         Please fill out the form below, and we’ll reach out when relevant opportunities arise.
@@ -83,7 +83,7 @@ export default function TalentNetwork() {
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               required
-              className="w-full border rounded px-3 py-2"
+              className="w-60 border rounded px-3 py-2"
             />
           </div>
           <div>
@@ -93,7 +93,7 @@ export default function TalentNetwork() {
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               required
-              className="w-full border rounded px-3 py-2"
+              className="w-60 border rounded px-3 py-2"
             />
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function TalentNetwork() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full border rounded px-3 py-2"
+            className="w-75 border rounded px-3 py-2"
           />
         </div>
 
@@ -116,14 +116,14 @@ export default function TalentNetwork() {
             value={phone}
             onChange={(phone) => setPhone(phone)}
             required
-            inputClass="!w-full !py-2 !px-3 !border !rounded"
+            inputClass="!w-75 !py-2 !px-3 !border !rounded"
           />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block font-medium">Country</label>
-            <CountryDropdown value={country} onChange={onChangeCountry} className="w-full border rounded px-3 py-2" />
+            <CountryDropdown value={country} onChange={onChangeCountry} className="w-50 border rounded px-3 py-2" />
           </div>
           <div>
             <label className="block font-medium">Region</label>
@@ -131,7 +131,7 @@ export default function TalentNetwork() {
               country={country}
               value={region}
               onChange={(val) => setRegion(val)}
-              className="w-full border rounded px-3 py-2"
+              className="w-50 border rounded px-3 py-2"
               required
             />
           </div>
@@ -144,22 +144,22 @@ export default function TalentNetwork() {
             placeholder="https://www.linkedin.com/in/your-profile"
             value={linkedin}
             onChange={(e) => setLinkedin(e.target.value)}
-            className="w-full border rounded px-3 py-2"
+            className="w-85 border rounded px-3 py-2"
           />
         </div>
 
         <DropdownSelect onChange={setDomains} />
         <Years onChange={setYears} />
         <PartTime value={partTime} onChange={(e) => setPartTime(e.target.value)} />
-        <Textbox value={bio} onChange={setBio} limit={300} />
+        <Textbox value={bio} onChange={setBio} limit={300}/>
 
         <div>
-          <label className="block font-medium">Upload Resume</label>
+          <label className="block font-medium ">Upload Resume</label>
           <input
             type="file"
             accept=".pdf,.doc,.docx"
             onChange={(event) => setResumeFile(event.target.files[0])}
-            className="w-full border rounded px-3 py-2"
+            className="w-75 border rounded px-3 py-2"
           />
         </div>
 

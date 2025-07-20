@@ -12,9 +12,9 @@ export default function hrpayroll({ className = '' }) {
         "Got a question or need a quick consultation?";
     
     return (
-       <div className="card-container">
+       <div className="card-container border-none">
 
-            <div className="card bg-[gray-800] text-white rounded-lg p-3 m-3 shadow-xl ring-2">
+            <div className="card bg-[gray-800] text-white rounded-lg p-3 m-3 shadow-xl">
                 <h3 className="text-2xl font-bold mb-2">Partner With Us</h3>
                 <div className="card-content">
                     <p>{partnerText}</p>
@@ -26,7 +26,7 @@ export default function hrpayroll({ className = '' }) {
                 </div>
             </div>
 
-            <div className="card bg-[gray-800] text-white rounded-lg p-3 m-3 shadow-xl ring-2">
+            <div className="card bg-[gray-800] text-white rounded-lg p-3 m-3 shadow-xl">
                 
                 <h3 className="text-2xl font-bold mb-2">Join the Team</h3>
                         <div className="card-content">
@@ -39,7 +39,7 @@ export default function hrpayroll({ className = '' }) {
                         </div>
                     
             </div>
-            <div className="card bg-[gray-800] text-white rounded-lg p-3 m-3 shadow-xl ring-2">
+            <div className="card bg-[gray-800] text-white rounded-lg p-3 m-3 shadow-xl">
                 
                 <h3 className="text-2xl font-bold mb-2">Let's Connect</h3>
                         <div className="card-content">

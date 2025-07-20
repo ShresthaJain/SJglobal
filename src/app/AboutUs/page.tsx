@@ -12,15 +12,18 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 export default function About() {
     const navigation = [
     { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/AboutUs'},
     { name: 'Services', href: '/Services' },
-    { name: 'Careers', href: '/Careers' },
-    { name: 'Contact Us', href: '/Contact' },
-    { name: 'Partner with Us', href: '/Partner' },
     { name: 'Why Us', href: '/WhyUs' },
-    ];
+    { name: 'Partner With Us', href: './Partner'},
+    { name: 'Careers', href: '/Careers'},
+    { name: 'Contact Us', href: '/Contact' },
+    
+  ];
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     
     return (
+    <div>
         <div className="relative isolate min-h-screen overflow-hidden">
         {/* Animated Gradient Background */}
         <div className="absolute inset-0 -z-10 animated-gradient opacity-30 blur-2xl" />
@@ -93,7 +96,7 @@ export default function About() {
             </header>
             
             {/* Hero Section */}
-            <div className="relative isolate overflow-hidden px-6 pt-32 sm:pt-48 lg:px-8 lg:pt-56">
+            <div className="relative isolate overflow-hidden px-6 pt-32 sm:pt-48 lg:px-8 lg:pt-25">
                 {/* Top Gradient */}
                 <div
                 aria-hidden="true"
@@ -110,7 +113,7 @@ export default function About() {
 
                 <div className="mx-auto max-w-full text-left">
                 <main className="flex-grow px-6 py-10 max-w-7xl mx-auto">
-                        <h2 className="text-3xl font-bold text-center text-black mb-10">About Us</h2>
+                        <h2 className="text-3xl font-bold text-center text-black mb-2">About Us</h2>
 
                         <section className="mb-10">
                             <Founder />
@@ -125,13 +128,20 @@ export default function About() {
                         </section>
 
                         <div className="bg-gray-100 p-6 rounded-lg shadow">
-                            <p className="text-lg">
-                                At SJ Global Consulting, our values are our promise. To lead with empathy, to act with honesty,
-                                to build with people, and to grow with purpose.
+                            <p className="text-lg text-center">
+                                <em>"At SJ Global Consulting, our values are our promise. To lead with empathy, to act with honesty,
+                                to build with people, and to grow with purpose."
                                 <br />
-                                Let’s turn complexity into clarity — together.
+                                Let’s turn complexity into clarity — together..."</em>
                             </p>
                         </div>
+                        <div className="flex items-center justify-center pt-10">
+                            <img
+                                src="/images/globe.jpeg"
+                                className="w-1/2 h-auto object-contain"
+                                alt="Flower"
+                            />
+                            </div>
                     </main>
                 </div>
 
@@ -149,6 +159,70 @@ export default function About() {
                 />
                 </div>
             </div>
+        </div>
+        <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300">
+          <div className="mx-auto w-full max-w-screen-xl px-4 py-10 lg:py-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+              
+              {/* Quick Links */}
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
+                <ul className="space-y-3 font-medium">
+                  <li><a href="/" className="hover:underline">Home</a></li>
+                  <li><a href="/AboutUs" className="hover:underline">About Us</a></li>
+                  <li><a href="/Services" className="hover:underline">Services</a></li>
+                  <li><a href="/WhyUs" className="hover:underline">Why Us</a></li>
+                  <li><a href="/Partner" className="hover:underline">Partner With Us</a></li>
+                  <li><a href="/Careers" className="hover:underline">Careers</a></li>
+                  <li><a href="/Contact" className="hover:underline">Contact Us</a></li>
+                </ul>
+              </div>
+
+              {/* Contact Information */}
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
+                <ul className="space-y-3 font-medium">
+                  <li>SJ Global Consulting</li>
+                  <li>Based in India & US | Serving Clients Globally</li>
+                  <li>info@sjglobalconsulting.com</li>
+                  <li>+91 99106 28496</li>
+                  <li>www.sjglobalconsulting.com</li>
+                </ul>
+              </div>
+
+              {/* Focus Regions */}
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
+                <ul className="space-y-3 font-medium">
+                  <li>GCC</li>
+                  <li>ASEAN</li>
+                  <li>USA</li>
+                  <li>Canada</li>
+                  <li>Italy</li>
+                  <li>China</li>
+                </ul>
+              </div>
+
+              {/* Work Together */}
+              <div>
+                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Let’s Work Together</h2>
+                <p className="mb-4">
+                  From simplifying exports to building HR systems and ERP workflows — we’re here to help you grow with clarity and compliance.
+                </p>
+                <a
+                  href="/Contact"
+                  className="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition"
+                >
+                  🔶 Book a Consultation →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="px-4 py-6 bg-gray-100 dark:bg-gray-800 text-center text-sm text-gray-500 dark:text-gray-400">
+            © {new Date().getFullYear()} <a href="https://sjglobalconsulting.com" className="hover:underline">SJ Global Consulting</a>. All rights reserved.
+          </div>
+        </footer>
         </div>
     );
 }
