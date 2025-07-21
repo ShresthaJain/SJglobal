@@ -218,7 +218,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="px-4 py-6 bg-gray-100 dark:bg-gray-800 text-center text-sm text-gray-500 dark:text-gray-400">
+          <div className="px-4 py-6 bg-gray-800 text-center text-sm text-gray-400">
             © {new Date().getFullYear()} <a href="https://sjglobalconsulting.com" className="hover:underline">SJ Global Consulting</a>. All rights reserved.
           </div>
         </footer>
