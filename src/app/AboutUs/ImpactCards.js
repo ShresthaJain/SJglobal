@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function ImpactCards({ className = '' }) {
   const cards = [
     "Export-Import (EXIM) Operations & Documentation",
-    "Enterprises Resource Planning Optimization and Operational SOPs",
+    "Enterprise Resource Planning Optimization and Operational SOPs",
     "Human Resource Policy Setup ",
     "Statutory Compliance and Onboarding Processes",
     "PoSH (Prevention of Sexual Harassment) Policy Drafting, Training & Committee formation"

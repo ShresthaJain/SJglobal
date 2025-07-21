@@ -6,7 +6,7 @@ export default function Intro() {
         HR tech, ERP systems, or business operations?
       </p>
       <p>
-        At Sjain Global Consulting, we are building a trusted network of like-minded partners who share our values of
+        At SJ Global Consulting, we are building a trusted network of like-minded partners who share our values of
         integrity, efficiency, and client-centric delivery.
       </p>
     </div>

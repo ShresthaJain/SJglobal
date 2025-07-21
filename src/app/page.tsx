@@ -113,7 +113,7 @@ export default function Home() {
                 Turning Complexity into Clarity
               </h3>
               <p className="mt-8 text-lg text-gray-200 sm:text-xl text-justify">
-                Empowering Businesses Globally With Structured, Scalable, And Compliant Operations.
+                Guiding Businesses Globally With Structured, Scalable, And Compliant Operations.
               </p>
               <div className="mt-10 pt-20">
                 <ul className="grid grid-cols-1 gap-1 lg:grid-cols-2 sm:gap-1 items-left text-base font-medium text-gray-900">

@@ -17,7 +17,7 @@ export default function Founder() {
                 
               </div>
               {/* Image Section - 1/3 width */}
-              <div className="w-full lg:w-1/3">
+              <div className="object-center pt-20 pl-15 w-full lg:w-1/3">
                 <img
                   src="/images/ShilpiJ.png"
                   alt="Founder"

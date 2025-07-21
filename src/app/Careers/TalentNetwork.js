@@ -62,6 +62,18 @@ export default function TalentNetwork() {
       });
 
       alert('Form submitted successfully!');
+      // setFirstName('');
+      // setLastName('');
+      // setEmail('');
+      // setPhone('');
+      // setCountry('');
+      // setRegion('');
+      // setLinkedin('');
+      // setDomains([]);
+      // setYears('');
+      // setPartTime('');
+      // setBio('');
+      // setResumeFile(null);
     } catch (error) {
       console.log(error);
       alert('Submission failed. Please try again.');

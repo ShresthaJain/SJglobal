@@ -126,7 +126,7 @@ export default function WhyUs() {
                 <div>
               <h4 className="text-2xl font-semibold mb-2">Stand Up, Speak Up</h4>
               <p>
-                We encourage every individual we work with to bring their whole self to the table...
+                We empower every individual we work with to bring their whole self to the table...
               </p>
             </div>
               <div>

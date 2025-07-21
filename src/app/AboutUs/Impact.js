@@ -18,7 +18,7 @@ export default function Impact() {
                 <div className="w-full lg:w-2/3 lg:ml-auto text-left">
                     <h4 className="text-2xl font-semibold mb-4 text-gray-900">Making an Impact That Matters</h4>
                     <p className="mt-3 text-lg text-gray-700 sm:text-xl text-justify">At SJ Global, our purpose is to make an impact that truly matters, for our clients, our collaborators, and the society we operate in.
-                    <br /> <br /> We partner with International company expanding into India, Manufacturing Unit, Importers, Exporters, Early Stage Ventures to Established Enterprises to simplify what often feels complex; whether in global trade, operations, ERP systems, or people policies. Our mission is to build structures that last, enable compliance without chaos, and align strategy with human dignity.
+                    <br /> <br /> We partner with International companies expanding into India, Manufacturing Unit, Importers, Exporters, Early Stage Ventures to Established Enterprises to simplify what often feels complex; whether in global trade, operations, ERP systems, or people policies. Our mission is to build structures that last, enable compliance without chaos, and align strategy with human dignity.
                     </p>
                 </div>    
             </div>

@@ -59,7 +59,7 @@ export default function ServicesList() {
       items: [
         'Monthly payroll setup and structure advisory',
         'Salary structure design aligned with industry benchmarks',
-        'Help in choosing the right digital payroll Tools ',
+        'Help in choosing the right Digital Payroll Tools ',
         'Digitalization of the Payroll system ',
         'Implementation, training and support '
         
