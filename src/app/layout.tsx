@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  display: "swap", // Optional: improves performance
+  display: "swap",
 });
+
+
+<footer className="bg-gray-100 text-white"> </footer>
 
 export const metadata: Metadata = {
   title: "SJ Global Consulting",

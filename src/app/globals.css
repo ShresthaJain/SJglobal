@@ -1,10 +1,6 @@
 @import "tailwindcss"; 
 @tailwind utilities;
 
-:root {
-  font-family: var(--font-montserrat), sans-serif;
-}
-
 @layer utilities {
   .animate-fade-in {
     animation: fadeIn 1s ease-in-out;
@@ -20,6 +16,11 @@
   background: radial-gradient(#ffad30, #ffe6b3, #ffad30);
   background-size: 600% 600%;
   animation: moveGradient 15s ease infinite;
+}
+
+footer {
+  background-color: #ffffff; /* or #111827 for dark */
+  color: #000000;            /* or #f9fafb for light text */
 }
 
 
