@@ -125,7 +125,7 @@ export default function WhyUs() {
               <div className="w-full lg:w-1/2 lg:ml-auto text-left">
                 <div>
               <h4 className="text-2xl font-semibold mb-2">Stand Up, Speak Up</h4>
-              <p>
+              <p className='pb-5'>
                 We empower every individual we work with to bring their whole self to the table...
               </p>
             </div>
@@ -137,7 +137,7 @@ export default function WhyUs() {
                     <li>Inclusion in voice, visibility, and contribution</li>
                 </ul>
                 <p className="mt-2">
-                    We strongly encourage women professionals—whether re-entering the workforce or seeking meaningful roles...
+                    We strongly encourage women professionals, whether re-entering the workforce or seeking meaningful roles...
                 </p>
             </div>
                 
@@ -163,7 +163,7 @@ export default function WhyUs() {
             </div>
 
             <p>
-              As we grow, our commitment remains: to build a consulting culture where difference is celebrated, and inclusion is standard—not exceptional.
+              As we grow, our commitment remains: to build a consulting culture where difference is celebrated, and inclusion is standard, it's not exceptional.
             </p>
 
             <p>Let’s grow together, by making space for everyone.</p>
@@ -192,7 +192,7 @@ export default function WhyUs() {
         </div>
       </div>
     </div>
-    <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300">
+    <footer className="bg-gray-900 text-gray-300">
           <div className="mx-auto w-full max-w-screen-xl px-4 py-10 lg:py-14">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
               

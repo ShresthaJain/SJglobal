@@ -11,7 +11,7 @@ export default function Founder() {
                 
                 <p className="mt-8 text-lg text-gray-700 sm:text-xl text-justify">
                     With a background that spans International Trade, Custom projects, and Human Resource Strategy, Shilpi Jain has spent over 15 years bridging the gap between systems and people, across both India and the U.S. Her journey from leading large-scale IT and ERP rollouts to solving real-world operational challenges inspired her to launch SJ Global Consulting, where practical solutions meet human-centered consulting. 
-                    <br /> <br />She believes that businesses grow best when process, compliance, and purpose align and her mission is to help International company expanding into India, Manufacturing Unit, Importers, Exporters, Early Stage Ventures to Established Enterprises scale with clarity, dignity, and confidence.
+                    <br /> <br />She believes that businesses grow best when process, compliance, and purpose align and her mission is to help International companies expanding into India, Manufacturing Unit, Importers, Exporters, Early Stage Ventures to Established Enterprises scale with clarity, dignity, and confidence.
 
                 </p>
                 

@@ -7,12 +7,12 @@ export default function SlideShow() {
   const [current, setCurrent] = useState(0);
 
   const slideImages = [
-    { url: 'images/img1.jpeg', caption: 'Slide 1' },
-    { url: 'images/img2.jpeg', caption: 'Slide 2' },
-    { url: 'images/img3.jpeg', caption: 'Slide 3' },
-    { url: 'images/img4.jpeg', caption: 'Slide 4' },
-    { url: 'images/img5.jpeg', caption: 'Slide 5' },
-    { url: 'images/img6.jpeg', caption: 'Slide 6' },
+    { url: 'images/img6.jpeg', caption: 'Slide 1' },
+    { url: 'images/img5.jpeg', caption: 'Slide 2' },
+    { url: 'images/img2.jpeg', caption: 'Slide 3' },
+    { url: 'images/img1.jpeg', caption: 'Slide 4' },
+    { url: 'images/img4.jpeg', caption: 'Slide 5' },
+    { url: 'images/img3.jpeg', caption: 'Slide 6' },
     { url: 'images/img7.jpeg', caption: 'Slide 7' },
 
 

@@ -327,7 +327,7 @@ export default function Home() {
           
             
         </div>
-        <footer className="bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300">
+        <footer className="bg-gray-900 text-gray-300">
           <div className="mx-auto w-full max-w-screen-xl px-4 py-10 lg:py-14">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
               
