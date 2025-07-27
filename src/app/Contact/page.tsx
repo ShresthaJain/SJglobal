@@ -2,10 +2,10 @@
 
 import ContactForm from './ContactForm';
 
-import Link from 'next/link';
 import { useState } from 'react';
-import { Dialog, DialogPanel } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+
+import Header from '../Globals/header.js';
+import Footer from '../Globals/Footer.js';
 
 export default function Contact() {
   const navigation = [
@@ -28,57 +28,7 @@ export default function Contact() {
       <div className="absolute inset-0 -z-10 animated-gradient opacity-30 blur-2xl" />
 
       {/* NAVBAR */}
-      <header className="bg-white fixed inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">SJ Global</span>
-              <img src="/images/logo.png" alt="SJ Logo" className="h-17 w-auto" />
-            </Link>
-          </div>
-          <div className="flex lg:hidden">
-            <button onClick={() => setMobileMenuOpen(true)} className="-m-2.5 p-2.5 text-gray-700">
-              <Bars3Icon className="size-6" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className="text-lg font-semibold text-gray-900">
-                {item.name}
-              </Link>
-            ))}
-          </div>
-        </nav>
-
-        <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-          <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="-m-1.5 p-1.5">
-                <img src="/images/logo.png" alt="SJ Logo" className="h-8 w-auto" />
-              </Link>
-              <button onClick={() => setMobileMenuOpen(false)} className="-m-2.5 rounded-md p-2.5 text-gray-700">
-                <XMarkIcon className="size-6" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="block rounded-lg px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </DialogPanel>
-        </Dialog>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <div className="relative isolate overflow-hidden px-6 pt-32 sm:pt-48 lg:px-8 lg:pt-35">
@@ -156,68 +106,7 @@ export default function Contact() {
         </div>
       </div>
     </div>
-    <footer className="bg-gray-900 text-gray-300">
-          <div className="mx-auto w-full max-w-screen-xl px-4 py-10 lg:py-14">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-              
-              {/* Quick Links */}
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
-                <ul className="space-y-3 font-medium">
-                  <li><a href="/" className="hover:underline">Home</a></li>
-                  <li><a href="/AboutUs" className="hover:underline">About Us</a></li>
-                  <li><a href="/Services" className="hover:underline">Services</a></li>
-                  <li><a href="/WhyUs" className="hover:underline">Why Us</a></li>
-                  <li><a href="/Partner" className="hover:underline">Partner With Us</a></li>
-                  <li><a href="/Careers" className="hover:underline">Careers</a></li>
-                  <li><a href="/Contact" className="hover:underline">Contact Us</a></li>
-                </ul>
-              </div>
-
-              {/* Contact Information */}
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</h2>
-                <ul className="space-y-3 font-medium">
-                  <li>SJ Global Consulting</li>
-                  <li>Based in India & US | Serving Clients Globally</li>
-                  <li>info@sjglobalconsulting.com</li>
-                  <li>+91 99106 28496</li>
-                  <li>www.sjglobalconsulting.com</li>
-                </ul>
-              </div>
-
-              {/* Focus Regions */}
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
-                <ul className="space-y-3 font-medium">
-                  <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
-                  <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
-                  <li>United States of America</li>
-                  <li>Canada</li>
-                  <li>Europe (Italy, Poland)</li>
-                </ul>
-              </div>
-
-              {/* Work Together */}
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Let’s Work Together</h2>
-                <p className="mb-4">
-                  From simplifying exports to building HR systems and ERP workflows — we’re here to help you grow with clarity and compliance.
-                </p>
-                <a
-                  href="/Contact"
-                  className="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition"
-                >
-                  🔶 Book a Consultation →
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="px-4 py-6 bg-gray-800 text-center text-sm text-gray-400">
-            © {new Date().getFullYear()} <a href="https://sjglobalconsulting.com" className="hover:underline">SJ Global Consulting</a>. All rights reserved.
-          </div>
-        </footer>
+    <Footer />
     </div>
   );
 }
