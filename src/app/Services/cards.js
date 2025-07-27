@@ -37,7 +37,7 @@ export default function hrpayroll({ className = '' }) {
             setIsShownExim(!isShownExim);
         }
     return (
-       <div className="card-container">
+       <div className="card-container flex flex-wrap justify-center gap-6 p-4">
 
             <div className="card min-h-100">
                 <div className={`card-inner ${isShownHr ? 'flipped' : ''}`}>

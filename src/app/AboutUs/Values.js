@@ -42,13 +42,15 @@ export default function Values() {
 
   return (
     <div className="mt-5">
-      <div className="flex items-center justify-center">
-        <img
-          src="/images/flower.jpeg"
-          className="w-1/2 h-auto object-contain"
-          alt="Flower"
-        />
-      </div>
+      <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5">
+            <div className="flex justify-center pb-10 ">
+              <img
+                  src="/images/flower.jpeg"
+                  className="w-auto object-contain h-auto rounded-lg"
+                  alt="Plants"
+              />
+            </div>
+          </div>
       <br />
       <h4 className="text-2xl font-semibold mb-4 text-gray-900">Our Shared Values</h4>
       <p className="text-base text-gray-700 leading-relaxed mb-6">

@@ -1,10 +1,11 @@
 'use client';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 export default function SlideShow() {
   const [current, setCurrent] = useState(0);
+  const slideRef = useRef(null);
 
   const slideImages = [
     { url: 'images/img6.jpeg', caption: 'Slide 1' },
@@ -41,7 +42,7 @@ export default function SlideShow() {
 
   return (
     <div className="slide-container w-full">
-      <Slide {...properties}>
+      <Slide ref={slideRef}{...properties}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
@@ -59,6 +60,10 @@ export default function SlideShow() {
         {slideImages.map((_, index) => (
           <button
             key={index}
+            onClick={() => (
+              setCurrent((index)),
+              slideRef.current.goTo(index)
+            )}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               index === current ? 'bg-orange-500 scale-110' : 'bg-orange-300'
             }`}

@@ -316,16 +316,17 @@ export default function Home() {
             
 
           </div>
-            
-            <div className="flex items-left justify-center pb-10">
-                <img
-                    src="/images/buildings.jpeg"
-                    className="w-1/2 h-auto object-contain"
-                    alt="Buildings"
-                />
+          <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5">
+            <div className="flex justify-center pb-10 ">
+              <img
+                  src="/images/buildings.jpeg"
+                  className="w-auto object-contain h-auto rounded-lg"
+                  alt="Plants"
+              />
             </div>
+          </div>
           
-            
+          
         </div>
         <footer className="bg-gray-900 text-gray-300">
           <div className="mx-auto w-full max-w-screen-xl px-4 py-10 lg:py-14">

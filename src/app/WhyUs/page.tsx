@@ -102,13 +102,15 @@ export default function WhyUs() {
         </div>
 
         <main className="flex-grow px-6 py-10 max-w-5xl mx-auto">
-            <div className="flex items-center justify-center pb-10">
+            <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5">
+            <div className="flex justify-center pb-10 ">
               <img
                   src="/images/roped.jpeg"
-                  className="w-3/4 h-auto object-contain"
-                  alt="Flower"
+                  className="w-auto object-contain h-auto rounded-lg"
+                  alt="Rope view pattern"
               />
-        </div>
+            </div>
+          </div>
           <h2 className="text-3xl font-bold text-center text-black mb-10">Why Us</h2>
 
           <section className="space-y-8 text-lg text-gray-900">
@@ -168,13 +170,15 @@ export default function WhyUs() {
 
             <p>Let’s grow together, by making space for everyone.</p>
           </section>
-          <div className="flex items-center justify-center pb-10 pt-5">
+          <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5">
+            <div className="flex justify-center pb-10 ">
               <img
                   src="/images/mountain.jpeg"
-                  className="w-3/4 h-auto object-contain"
-                  alt="Flower"
+                  className="w-auto object-contain h-auto rounded-lg"
+                  alt="Hiking photo"
               />
-        </div>
+            </div>
+          </div>
         </main>
 
         {/* Bottom Gradient */}

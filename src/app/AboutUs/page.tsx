@@ -135,13 +135,15 @@ export default function About() {
                                 Let’s turn complexity into clarity — together..."</em>
                             </p>
                         </div>
-                        <div className="flex items-center justify-center pt-10">
+                        <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5 pt-15">
+                          <div className="flex justify-center pb-10 ">
                             <img
                                 src="/images/globe.jpeg"
-                                className="w-1/2 h-auto object-contain"
-                                alt="Flower"
+                                className="w-auto object-contain h-auto rounded-lg"
+                                alt="Plants"
                             />
-                            </div>
+                          </div>
+                        </div>
                     </main>
                 </div>
 

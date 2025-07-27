@@ -97,12 +97,14 @@ export default function Contact() {
         </div>
 
         <main className="flex-grow px-6 py-10 max-w-5xl mx-auto">
-            <div className="flex items-center justify-center pb-10">
+            <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5">
+            <div className="flex justify-center pb-10 ">
               <img
                   src="/images/contactString.jpeg"
-                  className="w-3/4 h-auto object-contain"
-                  alt="Flower"
+                  className="w-auto object-contain h-auto rounded-lg"
+                  alt="Contact us image"
               />
+            </div>
           </div>
 
           <div className="flex flex-col lg:flex-row items-start gap-12">

@@ -53,6 +53,15 @@ export default function PartnerForm() {
       });
 
       alert('Partner form submitted successfully!');
+      setFirstName(''),
+      setLastName(''),
+      setCompany(''),
+      setEmail(''),
+      setPhone(null),
+      setCountry(''),
+      setOfferedServices([null]),
+      setWebsite(''),
+      setFile(null)
     } catch (e) {
       console.error(e);
       alert('Submission failed. Please try again.');

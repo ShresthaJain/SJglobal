@@ -101,12 +101,14 @@ export default function ServicesPage() {
         </div>
 
         <main className="flex-grow px-6 py-10 max-w-7xl mx-auto">
-          <div className="flex items-center justify-center pt-5">
-            <img
-                src="/images/building.jpeg"
-                className="w-3/4 h-auto object-contain"
-                alt="building"
-            />
+          <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5">
+            <div className="flex justify-center pb-10 ">
+              <img
+                  src="/images/building.jpeg"
+                  className="w-auto object-contain h-auto rounded-lg"
+                  alt="Plants"
+              />
+            </div>
           </div>
           <h2 className="text-3xl font-bold text-center text-black mb-10 pt-10">Our Services</h2>
 
@@ -117,13 +119,15 @@ export default function ServicesPage() {
           <section className="mb-10">
             <Services />
           </section>
-          <div className="flex items-center justify-center pt-10 pb-10">
+          <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5">
+            <div className="flex justify-center pb-10 ">
               <img
                   src="/images/poly.jpeg"
-                  className="w-1/2 h-auto object-contain"
-                  alt="Flower"
+                  className="w-auto object-contain h-auto rounded-lg"
+                  alt="Plants"
               />
             </div>
+          </div>
           <p className="text-lg mb-6 text-gray-800">
             <strong>Custom Solutions | Co-Sourcing | Project Support</strong>
             <br />
@@ -151,13 +155,15 @@ export default function ServicesPage() {
             }}
           />
         </div>
-        <div className="flex items-center justify-center pb-10">
+        <div className="mx-auto max-w-7xl flex flex-col items-center justify-between gap-5">
+            <div className="flex justify-center pb-10 ">
               <img
                   src="/images/tech.jpeg"
-                  className="w-1/2 h-auto object-contain"
-                  alt="Flower"
+                  className="w-auto object-contain h-auto rounded-lg"
+                  alt="laptop"
               />
-        </div>
+            </div>
+          </div>
       </div>
       
     </div>

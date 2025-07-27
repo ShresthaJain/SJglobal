@@ -54,6 +54,16 @@ export default function ContactForm() {
       });
 
       alert('Form submitted successfully!');
+      setFirstName(''),
+      setLastName(''),
+      setCompany(''),
+      setDesignation(''),
+      setEmail(''),
+      setPhone(null),
+      setCountry(''),
+      setRegion(''),
+      setServices([]);
+      setFile(null);
     } catch (e) {
       console.log(e);
       alert('Submission failed. Please try again.');
