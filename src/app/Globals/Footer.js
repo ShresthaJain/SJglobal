@@ -37,8 +37,7 @@ export default function Footer() {
                 <ul className="space-y-3 font-medium">
                   <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
                   <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
-                  <li>United States of America</li>
-                  <li>Canada</li>
+                  <li>North America</li>
                   <li>UK & Europe (Italy, Poland)</li>
                 </ul>
               </div>
