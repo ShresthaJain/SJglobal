@@ -1,3 +1,5 @@
+import { FaLinkedin } from "react-icons/fa";
+
 export default function Footer() {
     return (
         <footer className="bg-gray-900 text-gray-300">
@@ -12,7 +14,7 @@ export default function Footer() {
                   <li><a href="/AboutUs" className="hover:underline">About Us</a></li>
                   <li><a href="/Services" className="hover:underline">Services</a></li>
                   <li><a href="/WhyUs" className="hover:underline">Why Us</a></li>
-                  <li><a href="/Partner" className="hover:underline">Partner With Us</a></li>
+                  <li><a href="/PartnerWithUs" className="hover:underline">Partner With Us</a></li>
                   <li><a href="/Careers" className="hover:underline">Careers</a></li>
                   <li><a href="/Contact" className="hover:underline">Contact Us</a></li>
                 </ul>
@@ -28,6 +30,19 @@ export default function Footer() {
                   <li>Email: info@sjglobalconsulting.com</li>
                   
                   <li>www.sjglobalconsulting.com</li>
+                  <li>
+                    <div>
+                      <a
+                      href="https://in.linkedin.com/company/sj-global-consulting" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center gap-2 hover:underline">
+                      Follow us
+                      <FaLinkedin className="text-blue-500" size={18} />
+                    </a>
+                    </div>
+                    
+                  </li>
                 </ul>
               </div>
 
@@ -59,7 +74,7 @@ export default function Footer() {
           </div>
 
           <div className="px-4 py-6 bg-gray-800 text-center text-sm text-gray-400">
-            © {new Date().getFullYear()} <a href="https://sjglobalconsulting.com" className="hover:underline">SJ Global Consulting</a>. All rights reserved.
+            © {new Date().getFullYear()} <a href="https://sjglobalconsulting.com" className="hover:underline">SJ Global Consulting</a>. All rights reserved. Website made by SJ Global Consulting.
           </div>
         </footer>
     )

@@ -11,9 +11,9 @@ export default function header() {
     { name: 'About Us', href: '/AboutUs'},
     { name: 'Services', href: '/Services' },
     { name: 'Why Us', href: '/WhyUs' },
-    { name: 'Partner With Us', href: './Partner'},
+    { name: 'Partner With Us', href: './PartnerWithUs'},
     { name: 'Careers', href: '/Careers'},
-    { name: 'Contact Us', href: '/Contact' },
+    { name: 'Contact Us', href: '/ContactUs' },
 
   ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

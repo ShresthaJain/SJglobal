@@ -28,14 +28,35 @@ export default function hrpayroll({ className = '' }) {
     const [isShownExim, setIsShownExim] = useState(false);
 
     function handleClick1() {
-        setIsShownHr(!isShownHr);
+        setIsShownHr(prev => {
+            const newVal = !prev;
+            if (newVal) { // only close others if this one is opening
+            setIsShownExim(false);
+            setIsShownErp(false);
+            }
+            return newVal;
+        });
     }
     function handleClick2() {
-        setIsShownErp(!isShownErp);
+        setIsShownErp(prev => {
+            const newVal = !prev;
+            if (newVal) { // only close others if this one is opening
+            setIsShownExim(false);
+            setIsShownHr(false);
+            }
+            return newVal;
+        });
     }
     function handleClick3() {
-            setIsShownExim(!isShownExim);
-        }
+            setIsShownExim(prev => {
+            const newVal = !prev;
+            if (newVal) { // only close others if this one is opening
+            setIsShownHr(false);
+            setIsShownErp(false);
+            }
+            return newVal;
+        });
+    }
     return (
        <div className="card-container flex flex-wrap justify-center gap-6 p-4">
 

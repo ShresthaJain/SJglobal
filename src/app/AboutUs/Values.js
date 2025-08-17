@@ -60,13 +60,13 @@ export default function Values() {
       {values.map((val, index) => {
         const isOpen = openStates[index];
         return (
-          <div key={index} className="border-b border-slate-200">
+          <div key={index} className="border-b border-slate-800 shadow-2xs shadow-amber-600 mb-4">
             <button
               type="button"
               onClick={() => toggleAccordion(index)}
               className="w-full flex justify-between items-center py-5 text-slate-800"
             >
-              <span>{val.title}</span>
+              <span className="font-bold text-xl">{val.title}</span>
               <span className="transition-transform duration-300">
                 {isOpen ? (
                   // Minus icon
@@ -86,7 +86,7 @@ export default function Values() {
                 isOpen ? 'max-h-96' : 'max-h-0'
               }`}
             >
-              <div className="pb-5 text-base text-gray-700 leading-relaxed">{val.content}</div>
+              <div className="pb-5 text-gray-700 leading-relaxed shadow-black text-l">{val.content}</div>
             </div>
             
           </div>

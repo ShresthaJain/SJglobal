@@ -10,6 +10,7 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 import ServicesOfferedDropdown from './ServicesOffered';
 import Textbox from './textbox';
+import axios from "axios";
 
 const db = getFirestore(app);
 
@@ -50,6 +51,7 @@ export default function PartnerForm() {
         servicesOffered: offeredServices.map((d) => d.value),
         website,
         files: fileURL,
+        
       });
 
       alert('Partner form submitted successfully!');
@@ -119,6 +121,7 @@ export default function PartnerForm() {
             onChange={setPhone}
             inputClass="!w-75 !py-2 !px-3 !border !rounded"
             required
+            
           />
         </div>
 

@@ -208,7 +208,7 @@ export default function Home() {
                 <li>India</li>
                 <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
                 <li>ASEAN (Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
-                <li>USA & Canada</li>
+                <li>North America</li>
                 <li>UK & Europe (Italy, Poland)</li>
               </ul>
               <br />
