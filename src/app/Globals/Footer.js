@@ -16,7 +16,7 @@ export default function Footer() {
                   <li><a href="/WhyUs" className="hover:underline">Why Us</a></li>
                   <li><a href="/PartnerWithUs" className="hover:underline">Partner With Us</a></li>
                   <li><a href="/Careers" className="hover:underline">Careers</a></li>
-                  <li><a href="/Contact" className="hover:underline">Contact Us</a></li>
+                  <li><a href="/ContactUs" className="hover:underline">Contact Us</a></li>
                 </ul>
               </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
                 <ul className="space-y-3 font-medium">
                   <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
-                  <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
+                  <li>ASEAN(China, Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
                   <li>North America</li>
                   <li>UK & Europe (Italy, Poland)</li>
                 </ul>
@@ -64,7 +64,7 @@ export default function Footer() {
                   From simplifying exports to building HR systems and ERP workflows — we’re here to help you grow with clarity and compliance.
                 </p>
                 <a
-                  href="/Contact"
+                  href="/ContactUs"
                   className="inline-block bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition"
                 >
                   🔶 Book a Consultation →
