@@ -207,6 +207,7 @@ export default function Home() {
               <ul className="mt-4 list-disc list-inside text-gray-700 text-lg sm:text-xl space-y-2">  We are specialized globally for cross-border trade and consulting, howe ever our key focussed regions are mentioned but not limited to:
                 <li>India</li>
                 <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
+                <li>China</li>
                 <li>ASEAN (Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
                 <li>North America</li>
                 <li>UK & Europe (Italy, Poland)</li>

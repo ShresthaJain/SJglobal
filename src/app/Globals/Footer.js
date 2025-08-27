@@ -51,7 +51,8 @@ export default function Footer() {
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Focus Regions</h2>
                 <ul className="space-y-3 font-medium">
                   <li>GCC (UAE, Saudi Arabia, Oman, Kuwait, Qatar, Bahrain)</li>
-                  <li>ASEAN(China, Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
+                  <li>China</li>
+                  <li>ASEAN(Singapore, Vietnam, Malaysia, Thailand, etc.)</li>
                   <li>North America</li>
                   <li>UK & Europe (Italy, Poland)</li>
                 </ul>
