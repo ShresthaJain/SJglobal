@@ -17,13 +17,13 @@ const navigation = [
     { name: 'Why Us', href: '/WhyUs' },
     { name: 'Partner With Us', href: './Partner'},
     { name: 'Careers', href: '/Careers'},
-    { name: 'Contact Us', href: '/Contact' },
+    { name: 'Contact Us', href: '/ContactUs' },
     
   ];
 
 const callToAction = [
   { name: 'Explore Our Services', href: '/Services' },
-  { name: 'Book a Consultation', href: '/Contact' },
+  { name: 'Book a Consultation', href: '/ContactUs' },
 ]
 
 export default function Home() {
