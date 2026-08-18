@@ -4,13 +4,12 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { CountryDropdown, RegionDropdown } from 'react-country-region-selector';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
-import { app, storage } from '../firebase';
+import { db, storage } from '../firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 
 import ServicesDropdown from './ServicesDropdown.js';
 import Textbox from './textbox.js';
 
-const db = getFirestore(app);
 
 export default function ContactForm() {
   const [firstName, setFirstName] = useState('');
@@ -33,14 +32,35 @@ export default function ContactForm() {
     e.preventDefault();
 
     try {
-      let fileURL = '';
-      if (file) {
-        const storageRef = ref(storage, `contactFormFiles/${firstName}_${lastName}_${Date.now()}`);
-        await uploadBytes(storageRef, file);
-        fileURL = await getDownloadURL(storageRef);
-      }
+    let fileURL = '';
 
-      await addDoc(collection(db, 'ServicesContact'), {
+    if (file) {
+      const storageRef = ref(
+        storage,
+        `contactFormFiles/${firstName}_${lastName}_${Date.now()}`
+      );
+      await uploadBytes(storageRef, file);
+      fileURL = await getDownloadURL(storageRef);
+    }
+
+    await addDoc(collection(db, 'ServicesContact'), {
+      firstName,
+      lastName,
+      companyName,
+      designation,
+      email,
+      phone,
+      country,
+      region,
+      services: services.map((d) => d.value),
+      files: fileURL,
+    });
+
+    await fetch('/Globals/api', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        formType: "contact",
         firstName,
         lastName,
         companyName,
@@ -50,24 +70,27 @@ export default function ContactForm() {
         country,
         region,
         services: services.map((d) => d.value),
-        files: fileURL,
-      });
+        fileURL,
+      }),
+    });
 
-      alert('Form submitted successfully!');
-      setFirstName(''),
-      setLastName(''),
-      setCompany(''),
-      setDesignation(''),
-      setEmail(''),
-      setPhone(null),
-      setCountry(''),
-      setRegion(''),
-      setServices([]);
-      setFile(null);
-    } catch (e) {
-      console.log(e);
-      alert('Submission failed. Please try again.');
-    }
+    alert('Form submitted successfully!');
+
+    setFirstName('');
+    setLastName('');
+    setCompany('');
+    setDesignation('');
+    setEmail('');
+    setPhone(null);
+    setCountry('');
+    setRegion('');
+    setServices([]);
+    setFile(null);
+
+  } catch (e) {
+    console.error(e);
+    alert('Submission failed. Please try again.');
+  }
   };
 
   return (

@@ -45,7 +45,6 @@ export default function hrpayroll({ className = '' }) {
                         <div className="card-content">
                             <p>{connectText}</p>
                             <a href="mailto:info@sjglobalconsulting.com">📧 info@sjglobalconsulting.com</a>
-                            <p>📞 +91 99106 28496</p>
                         </div>
                         <div className="button-container">
                             <button onClick={() => window.location.href = '/Contact'}>

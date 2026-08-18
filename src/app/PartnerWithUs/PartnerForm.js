@@ -11,7 +11,6 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import ServicesOfferedDropdown from './ServicesOffered';
 import Textbox from './textbox';
 import axios from "axios";
-
 const db = getFirestore(app);
 
 export default function PartnerForm() {
@@ -53,6 +52,23 @@ export default function PartnerForm() {
         files: fileURL,
         
       });
+
+      await fetch('/Globals/api', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        formType: "partner",
+        firstName,
+        lastName,
+        company,
+        email,
+        phone,
+        country,
+        servicesOffered: offeredServices.map((d) => d.value),
+        website,
+        files: fileURL,
+      }),
+    });
 
       alert('Partner form submitted successfully!');
       setFirstName(''),

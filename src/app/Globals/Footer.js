@@ -26,7 +26,6 @@ export default function Footer() {
                 <ul className="space-y-3 font-medium">
                   <li>SJ Global Consulting</li>
                   <li>Based in India & United States | Serving Clients Globally</li>
-                  <li>Phone No: +91 99106 28496</li>
                   <li>Email: info@sjglobalconsulting.com</li>
                   
                   <li>www.sjglobalconsulting.com</li>

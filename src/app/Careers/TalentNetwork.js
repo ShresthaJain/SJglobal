@@ -10,10 +10,8 @@ import Textbox from './textbox.js';
 import PartTime from './partTime.js';
 
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
-import { app, storage } from '../firebase';
+import { db, storage } from '../firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-
-const db = getFirestore(app);
 
 export default function TalentNetwork() {
   const [firstName, setFirstName] = useState('');
@@ -60,6 +58,26 @@ export default function TalentNetwork() {
         bio,
         resume: resumeURL,
       });
+
+      await fetch('/Globals/api', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        formType: "talent",
+        firstName,
+        lastName,
+        email,
+        phone,
+        country,
+        region,
+        linkedin,
+        domains: domains.map((d) => d.value),
+        yearsOfExperience: years,
+        partTime,
+        bio,
+        resume: resumeURL,
+      }),
+    });
 
       alert('Form submitted successfully!');
       setFirstName(''),
